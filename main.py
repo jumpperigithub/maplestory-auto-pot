@@ -7,15 +7,16 @@ import time
 import random
 import tkinter as tk
 from tkinter import ttk
-import queue
-from threading import Thread
 
 @dataclass
 class Point:
     x: int
     y: int
 
-# Constants
+# Constants. UPDATE THESE VALUES TO MATCH YOUR GAME
+# USE pixel_debugger.py TO FIND THE CORRECT COORDINATES AND COLORS
+# RUN "python pixel_debugger.py" and move the mouse to the desired position
+# Press 'q' to quit the app and get the RGB color values and coordinates
 GAME_CONFIG = {
     'screen_check': {
         'position': Point(129, 1382),
